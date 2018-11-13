@@ -1,0 +1,13 @@
+{
+  "pages": {
+    "admin/gateway/pagseguro": {
+      "path": "/admin/gateway/pagseguro",
+      "extensible": true
+    }
+  },
+  "extensions": {
+    "admin/gateway/pagseguro": {
+      "component": "index"
+    }
+  }
+}
