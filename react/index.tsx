@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { PaymentModel } from 'gocommerce.admin-gateway'
 
 interface IAppProps {
   children: React.ReactElement<any>
@@ -6,7 +7,7 @@ interface IAppProps {
 
 const Pagseguro: React.SFC<IAppProps> = props => {
   // return props.children
-  return <div>HAHAHAHA</div>
+  return <PaymentModel>HAHAHAHA</PaymentModel>
 }
 
 export default Pagseguro
