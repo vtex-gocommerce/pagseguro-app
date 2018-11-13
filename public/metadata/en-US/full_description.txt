@@ -1,0 +1,15 @@
+## About
+
+The Google Shopping app syncs your products in VTEX to Google Merchant Center (GMC) and allows you to create and manage Google Shopping Campaigns directly from the VTEX platform. This way, you can, simply and quickly, attract traffic to your site!
+
+## Functionalities
+- Integration of your catalog into VTEX with the GMC
+- Creating and managing Google Shopping campaigns
+
+## How to configure
+
+After installing the app, locate the 'Installed apps' section in your Admin and go to the Google Shopping app. Once you start the app, follow its initial instructions to set it up and start campaigning.
+
+## Comments
+- Initially the app is being launched to work only with Brazilian stores that sell in BRL
+- Billing is done directly by VTEX, so you will receive a unified invoice

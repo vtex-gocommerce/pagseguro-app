@@ -1,0 +1,5 @@
+La aplicación Google Shopping integra productos VTEX con Google Merchant Center (GMC) y permite la creación y administración de Campañas de Shopping de Google AdWords (AW) directamente desde la plataforma VTEX.
+
+La aplicación proporcionará la incorporación de los clientes, creando tras las APIs las cuentas GMC y AW. La facturación se realizará de forma unificada, por lo que el cliente recibirá una factura unificada de VTEX.
+
+En principio la aplicación está siendo lanzada para funcionar sólo con tiendas brasileñas que vendan en BRL.
