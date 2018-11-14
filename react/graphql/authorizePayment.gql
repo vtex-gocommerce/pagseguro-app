@@ -1,0 +1,9 @@
+mutation authorizePayment($action: String, $code: String, $nextUrl: String) @context(scope: "private") {
+  authorizePayment(action: $action, code: $code, nextUrl: $nextUrl) {
+    data {
+      urlLocation
+    }
+    status_code
+    message
+  }
+}

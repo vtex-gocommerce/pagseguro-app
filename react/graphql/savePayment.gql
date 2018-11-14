@@ -1,0 +1,10 @@
+mutation savePayment($data: String) @context(scope: "private") {
+  savePayment(data: $data) {
+    userErrors {
+      message
+      code
+      path
+    }
+    paymentStatus
+  }
+}
