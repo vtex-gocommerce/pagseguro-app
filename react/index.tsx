@@ -1,10 +1,6 @@
 import * as React from 'react'
 import { injectIntl } from 'react-intl'
-import { GcQuery, GcMutation, Context } from 'gocommerce.gc-utils'
-import { PaymentForm } from 'gocommerce.admin-gateway'
-import getPayment from './graphql/getPayment.gql'
-import savePayment from './graphql/savePayment.gql'
-import authorizePayment from './graphql/authorizePayment.gql'
+import { PaymentModel } from 'gocommerce.admin-gateway'
 
 interface PaymentFormProps {
   intl: any
@@ -218,7 +214,7 @@ class PaymentFormComponent extends React.PureComponent<PaymentFormProps, Payment
         "requireAuthorize": true
       },
       "initialValues": {
-        "paymentAlias": "mercadopagov1",
+        "paymentAlias": "pagseguro",
         "creditCardActive": false,
         "redirectActive": false,
         "numberOfInstallments": 12,
@@ -227,53 +223,7 @@ class PaymentFormComponent extends React.PureComponent<PaymentFormProps, Payment
       }
     }
 
-    return (
-      <GcQuery
-        ssr={false}
-        notifyOnNetworkStatusChange={true}
-        fetchPolicy="network-only"
-        errorPolicy="all"
-        query={getPayment}
-        variables={{
-          id: 'pagseguro'
-        }}
-      >
-        {getPayment => {
-          return (
-            <GcMutation mutation={authorizePayment}>
-              {(authorizePayment, dataAuthorizePaymentment) => (
-                <GcMutation mutation={savePayment}>
-                  {(savePayment, dataSavePayment) => (
-                    <Context.AccountContext.Consumer>
-                      {({ accountData }) => (
-                        <Context.GlobalNotificationsContext.Consumer>
-                          {global => {
-                            return (
-                              <PaymentForm
-                                account={accountData}
-                                openAlert={global.openAlert}
-                                paymentId="pagseguro"
-                                intl={this.props.intl}
-                                paymentSchema={paymentSchema}
-                                paymentDetails={getPayment.data.payment}
-                                savePayment={savePayment}
-                                authorizePayment={authorizePayment}
-                                isLoadingSavePayment={dataSavePayment.loading}
-                                isLoadingAuthorizePayment={dataAuthorizePaymentment.loading}
-                              />
-                            )
-                          }}
-                        </Context.GlobalNotificationsContext.Consumer>
-                      )}
-                    </Context.AccountContext.Consumer>
-                  )}
-                </GcMutation>
-              )}
-            </GcMutation>
-          )
-        }}
-      </GcQuery>
-    )
+    return <PaymentModel payment_id="pagseguro" paymentSchema={paymentSchema} />
   }
 }
 

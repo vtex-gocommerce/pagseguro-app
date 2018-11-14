@@ -12,7 +12,6 @@
     "payments"
   ],
   "dependencies": {
-    "gocommerce.gc-utils": "0.x",
     "gocommerce.admin-gateway": "0.x"
   },
   "builders": {
