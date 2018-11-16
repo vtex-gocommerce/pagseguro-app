@@ -1,6 +1,6 @@
 {
   "extensions": {
-    "admin/gateway/paymentDetail/pagseguro": {
+    "admin/gateway/paymentDetail/gocommerce.pagseguro-app": {
       "component": "index"
     }
   }
