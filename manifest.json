@@ -1,7 +1,7 @@
 {
   "name": "pagseguro-app",
   "vendor": "gocommerce",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "PagSeguro",
   "description": "PagSeguro App",
   "mustUpdateAt": "2019-03-02",

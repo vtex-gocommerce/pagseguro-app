@@ -1,15 +1,7 @@
-## About
+PagSeguro is an e-commerce solution that mediates payment between the seller and the buyer.
 
-The Google Shopping app syncs your products in VTEX to Google Merchant Center (GMC) and allows you to create and manage Google Shopping Campaigns directly from the VTEX platform. This way, you can, simply and quickly, attract traffic to your site!
+The buyer chooses the product or service that wants to buy in one of the sites that use PagSeguro, when finalizing the purchase is directed to the PagSeguro website and chooses the form of payment, being it via credit card, electronic transfer or boleto bancário.
 
-## Functionalities
-- Integration of your catalog into VTEX with the GMC
-- Creating and managing Google Shopping campaigns
+PagSeguro has an agreement with several banking institutions so that the seller can offer different types of payment to the buyers, who receive the payment and pass it on to the seller after making sure that there was no fraud in the transaction. The service offers more than 25 means of payment.
 
-## How to configure
-
-After installing the app, locate the 'Installed apps' section in your Admin and go to the Google Shopping app. Once you start the app, follow its initial instructions to set it up and start campaigning.
-
-## Comments
-- Initially the app is being launched to work only with Brazilian stores that sell in BRL
-- Billing is done directly by VTEX, so you will receive a unified invoice
+For purchases where the customer who did not receive the product or did not receive it according to the agreement, it is possible to open a dispute (complaint), where PagSeguro mediate the dispute to help the buyer to receive the product or the money back, and helps the seller receive the money from the transaction or return it to the buyer.
