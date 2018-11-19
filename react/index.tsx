@@ -94,7 +94,7 @@ class PaymentFormComponent extends React.PureComponent<PaymentFormProps, Payment
               "fields": {
                 "numberOfInstallments": {
                   "required": true,
-                  "type": "boolean",
+                  "type": "number",
                   "widget": "select",
                   "title": "Número de parcelas",
                   "options": [
@@ -150,7 +150,7 @@ class PaymentFormComponent extends React.PureComponent<PaymentFormProps, Payment
                 },
                 "numberOfInstallmentsInterestFree": {
                   "required": true,
-                  "type": "boolean",
+                  "type": "number",
                   "widget": "select",
                   "title": "Parcelas sem juros",
                   "options": [
