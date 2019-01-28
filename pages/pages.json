@@ -1,5 +1,13 @@
 {
+  "pages": {
+    "admin/gocommerce.pagseguro-app": {
+      "path": "/admin/gateway/payments/gocommerce.pagseguro-app"
+    }
+  },
   "extensions": {
+    "admin/gocommerce.pagseguro-app": {
+      "component": "index"
+    },
     "admin/gateway/paymentDetail/gocommerce.pagseguro-app": {
       "component": "index"
     },
