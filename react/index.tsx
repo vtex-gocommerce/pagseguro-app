@@ -35,41 +35,12 @@ class PaymentFormComponent extends React.PureComponent<PaymentFormProps, Payment
             "creditCardActive": {
               "type": "boolean",
               "widget": "toggle",
-              "required": true,
-              "options": [
-                {
-                  "value": false,
-                  "label": "No"
-                },
-                {
-                  "value": true,
-                  "label": "Yes"
-                }
-              ],
               "title": "Cartão ativo"
             },
             "redirectActive": {
               "type": "boolean",
               "widget": "toggle",
-              "required": true,
-              "options": [
-                {
-                  "value": false,
-                  "label": "No"
-                },
-                {
-                  "value": true,
-                  "label": "Yes"
-                }
-              ],
               "title": "Redirect ativo"
-            },
-
-            "minimumValue": {
-              "type": "number",
-              "widget": "currency",
-              "title": "Valor mínimo",
-              "description": "Valor mínimo para exibir esta forma de pagamento"
             }
           }
         },
