@@ -1,0 +1,5 @@
+{
+  "admin.gateway.pagseguro-app": {
+    "component": "index"
+  }
+}

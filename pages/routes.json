@@ -1,0 +1,5 @@
+{
+  "admin.gateway.pagseguro-app": {
+    "path": "/admin/gateway/payments/gocommerce.pagseguro-app"
+  }
+}
