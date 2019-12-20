@@ -41,7 +41,12 @@ class PaymentFormComponent extends React.PureComponent<PaymentFormProps, Payment
               "type": "boolean",
               "widget": "toggle",
               "title": "Redirect ativo"
-            }
+            },
+            "bankInvoiceActive": {
+              "type": "boolean",
+              "widget": "toggle",
+              "title": "Boleto bancário ativo"
+            },
           }
         },
         "boxApplicationSetup": {
@@ -190,7 +195,7 @@ class PaymentFormComponent extends React.PureComponent<PaymentFormProps, Payment
         "redirectActive": false,
         "numberOfInstallments": 12,
         "numberOfInstallmentsInterestFree": 1,
-        "bankInvoiceActive": "false"
+        "bankInvoiceActive": false
       }
     }
 
