@@ -19,11 +19,11 @@
   },
   "builders": {
     "react": "3.x",
-    "admin": "0.x",
-    "messages": "1.x"
+    "admin": "0.x"
   },
   "billingOptions": {
-    "free": true
+    "free": true,
+    "setupRoute": "/admin/app/gateway/payments/gocommerce.pagseguro-app"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

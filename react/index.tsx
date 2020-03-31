@@ -50,7 +50,7 @@ class PaymentFormComponent extends React.PureComponent<PaymentFormProps, Payment
           }
         },
         "boxApplicationSetup": {
-          "title": "Application Setup",
+          "title": "Geral",
           "button": "Instalar aplicativo",
           "id": "applicationSetup",
           "showFieldsOnlyAuthorized": true,
